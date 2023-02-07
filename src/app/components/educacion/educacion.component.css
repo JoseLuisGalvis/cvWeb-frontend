@@ -1,0 +1,324 @@
+#section_2 {
+    width: 98%;
+    height: 99vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ffff;
+    margin: 1em;
+}
+
+.video2 video {
+  width: 99vw;
+  height: 97vh;
+  z-index: -1;
+}
+
+.containerSection2 {
+    width: 70%;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    background-color: rgba(0,0,0,0.6);
+    margin: 1.5em 0 0 0;
+    z-index: 1;
+}
+
+.containerSection2 h2 {
+    font-size: 3.5em;
+    color: #ffff;
+    padding: 1em 0 0 0;
+    z-index: 3;
+    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff, 3px 4px 3px #ffff, 4px 5px 4px #000050;
+    margin: 0;
+    transition: transform .4s; /* Animation */
+}
+
+.containerSection2 h2:hover {
+    color: #97e9ff;
+    cursor: pointer;
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* ***************************************************************************************** */
+
+/* Timeline Container */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 5px 20px;
+    padding: 20px 20px 0px 20px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 1em 0;
+}
+
+.table tbody {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 3em 0 3em;
+}
+
+.outer1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 3em 0 3em;
+}
+
+/* Card container */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+}
+
+/* setting padding based on even or odd */
+.card:nth-child(odd) {
+    padding: 15px 0 20px 20px;
+}
+
+.card:nth-child(even) {
+    padding: 15px 15px 20px 0;
+}
+
+/* Global ::before */
+.card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: 5px solid #97e9ff;
+}
+
+/* Setting the border of top, bottom, left */
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 20px 0 0 20px;
+}
+
+/* Setting the border of top, bottom, right */
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 20px 20px 0;
+}
+
+/* Removing the border if it is the first card */
+.card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+    width: 92%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffff;
+    border-radius: 10px;
+    padding: 0.8em 0.8em 0.8em 1em;
+    box-shadow: 2px 3px 2px #000050, 4px 6px 4px #ffff, 6px 8px 6px #ffff, 4px 6px 4px #000050;
+    cursor: pointer;
+    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #000050;
+    transition: all 0.2s ease-in-out;
+}
+
+.info:hover {
+    color: #000090;
+    box-shadow: 0 0.2em 0.2em #2196f3, 0 0.3em 1em #81c9fa, 0 0.9em 1.5em #b9ffff;
+    transform: translateY(-0.7em);
+    text-shadow: none;
+}
+
+.encabezado {
+    width: 94%;
+    display: flex;
+    transition: transform .6s; /* Animation */
+}
+
+.encabezado:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.logo_main2 {
+  width: 30%;
+  height: 4vh;
+  border-radius: 0.3em;
+}
+
+.logo_main2 img {
+    width: 80%;
+    height: 4vh;
+    border-radius: 0.3em;
+}
+
+.text_main2 {
+    width: 70%;
+    display: flex;
+}
+
+/* Title of the card */
+.title {
+    width: 100%;
+    height: 2vh;
+    font-size: 1.1em;
+    color: #ffff;
+    position: relative;
+    margin: 0;
+    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #000050;
+}
+
+.title:hover {
+  color: #000090;
+  text-shadow: none;
+}
+
+.info p {
+  margin: 0 0 0.25em 0;
+}
+
+/* text right if the card is even  */
+.card:nth-child(even) > .info > .title {
+    text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card:nth-child(odd) > .info > .title::before {
+    left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card:nth-child(even) > .info > .title::before {
+    right: -45px;
+}
+
+/* ***************************************************************************************** */
+
+.cv {
+  display: flex;
+  z-index: 4;
+}
+
+.cv a {
+  color: #ffff;
+  text-decoration: none;
+  border: 5px solid #ffff;
+  border-radius: 0.4em;
+  margin: 0;
+  padding: 1em 2em;
+  transition: transform .4s; /* Animation */
+}
+
+.cv a:hover {
+  border: 5px solid #97e9ff;
+  color: #97e9ff;;
+  box-shadow: 5px 8px 8px #ffff;
+  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.iconos {
+  width: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 1em;
+}
+
+.iconos_top {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 0 1em 0;
+}
+
+.btn-edit4A {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    color: #000090;
+    float: right;
+}
+
+.btn-edit4A i {
+    color: #ffff;
+    margin: 0 0.8em 0 0;
+}
+
+.btn-edit5A {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    color: #000090;
+    float: right;
+}
+
+.btn-edit5A i {
+    color: #ffff;
+    margin: 0 0.8em 0 0;
+}
+
+.btn-edit6A {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: #000090;
+    float: right;
+}
+
+.btn-edit6A i {
+    color: #ffff;
+    margin: 0 0 0 0;
+}
+
+.iconos_bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 0.4em 0 0;
+}
+

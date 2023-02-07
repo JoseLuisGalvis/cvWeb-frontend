@@ -1,0 +1,41 @@
+<!-- Sección 3 -->
+<div id="section_3">
+    <div class="container3">
+        <div class="titulo_container3">
+            <h1>Habilidades<span>*</span></h1>
+            <p>( Expresadas en Términos Porcentuales )</p>
+        </div>
+        <div class="indice">
+            <div class="btn-edit4A" *ngIf="isLogged">
+                <i routerLink="/nuevaskills" class="fa fa-plus"></i>
+            </div>
+            <div id="indices">
+                <div class="indices_top" *ngFor="let Skills of skills">
+                    <div class="tecnologia">
+                        <div class="pie animate no-round" style="--p:{{Skills.porcentaje}}"><p>{{Skills.porcentaje}}</p></div>
+                        <h5>{{Skills.nombre}}</h5>
+                    </div>
+                    <div class="iconos">
+                        <td>
+                            <div class="iconos_top">
+                                <div class="btn-edit5A" *ngIf="isLogged">
+                                    <i routerLink="/editskills/{{Skills.id}}" class="fa fa-pencil"></i>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="iconos_bottom">
+                                <div class="btn-edit6A" *ngIf="isLogged">
+                                    <i (click)="delete(Skills.id)" class="fa fa-trash"></i>
+                                </div>
+                            </div>
+                        </td>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nota">
+            <h6><span>*</span>Nivel Básico</h6>
+        </div>
+    </div>
+</div>

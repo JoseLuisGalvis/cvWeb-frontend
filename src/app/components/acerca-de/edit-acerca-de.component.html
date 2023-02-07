@@ -1,0 +1,42 @@
+<div class="container" *ngIf="Persona">
+  <div class="slider-wrap">
+      <div class="single-slide" id="slide-1"></div>
+      <div class="single-slide" id="slide-2"></div>
+      <div class="single-slide" id="slide-3"></div>
+      <div class="single-slide" id="slide-4"></div>
+  </div>
+
+  <form (ngSubmit)="onUpdate()"novalidate class="custom-form" #f="ngForm">
+      <div id="logo">
+          <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank"><img src="https://raw.githubusercontent.com/JoseLuisGalvis/ap_cvWeb_assets/main/logoAProg.png" alt="logoArgPrograma"></a>
+          <h1>Editar Persona</h1>
+      </div>
+      <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="Persona.nombre" required>
+      </div>
+      <div class="form-group">
+          <label for="apellido">Apellido</label>
+          <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="Persona.apellido" required>
+      </div>
+      <div class="form-group">
+          <label for="cargo">Cargo</label>
+          <input type="text" class="form-control" id="cargo" name="cargo" [(ngModel)]="Persona.cargo" required>
+      </div>
+      <div class="form-group">
+          <label for="ciudad">Ciudad</label>
+          <input type="text" class="form-control" id="ciudad" name="ciudad" [(ngModel)]="Persona.ciudad" required>
+      </div>
+      <div class="form-group">
+          <label for="descripcion">Descripción</label>
+          <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="Persona.descripcion" required>
+      </div>
+      <div class="form-group">
+          <label for="img">Imagen</label>
+          <input type="text" class="form-control" id="img" name="img" [(ngModel)]="Persona.img">
+      </div>
+      <button class="btn btn-primary">
+            Editar Persona
+      </button>
+  </form>
+</div>

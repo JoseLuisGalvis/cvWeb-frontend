@@ -1,0 +1,63 @@
+
+<div id="section_5">
+    <div class="container5">
+        <div class="codigos">
+            <!----------------   Bloque Experiencia   ------------------>
+            <div class="codigos_title">
+                <h1>Experiencia</h1>
+                <div class="titulo_container">
+                    <table class="table">
+                        <tbody>
+                                <tr *ngFor="let Experiencia of expe">
+                                    <div class="resumen">
+                                        <td><h3>{{Experiencia.nombreE}}</h3></td>
+                                        <td><p>{{Experiencia.descripcionE}}</p></td>
+                                    </div>
+                                    <div class="iconos">
+                                        <td>
+                                            <div class="iconos_top">
+                                                <div class="btn-edit4A" *ngIf="isLogged">
+                                                    <i routerLink="/nuevaexp" class="fa fa-plus"></i>
+                                                </div>
+                                                <div class="btn-edit5A" *ngIf="isLogged">
+                                                    <i routerLink="/editexp/{{Experiencia.id}}" class="fa fa-pencil"></i>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="td-edit6A" *ngIf="isLogged">
+                                            <div class="iconos_bottom">
+                                                <div class="btn-edit6A">
+                                                    <i (click)="delete(Experiencia.id)" class="fa fa-trash"></i>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </div>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+              <!----------------   Bloque Experiencia   ------------------>
+                <div class="codigos_contact">
+                    <div class="contacto">
+                        <p>
+                            Correo Electrónico: jolugales@gmail.com
+                        </p>
+                    </div>
+                    <div class="qr">
+                        <div class="codigos_img">
+                            <div class="link_2">
+                                <img src="https://raw.githubusercontent.com/JoseLuisGalvis/ap_cvWeb_assets/main/link2.jpg" alt="">
+                                <p>Github</p>
+                            </div>
+                            <div class="link_3">
+                                <img src="https://raw.githubusercontent.com/JoseLuisGalvis/ap_cvWeb_assets/main/link3.jpg" alt="">
+                                <p>Replit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

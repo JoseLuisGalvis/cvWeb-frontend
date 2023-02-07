@@ -1,0 +1,55 @@
+<div id="section_2">
+    <div class="video2">
+        <video src="https://raw.githubusercontent.com/JoseLuisGalvis/ap_cvWeb_assets/main/videos/v2.mp4" autoplay="true" muted="false" loop="true"></video>
+    </div>
+    <div class="containerSection2">
+        <h2>Estudios</h2>
+        <div class="timeline">
+            <table class="table">
+                <tbody>
+                    <div class="outer" >
+                        <div class="card" *ngFor="let Educacion of educacion; index as i; first as isFirst">
+                            <div class="info">
+                                <div class="encabezado">
+                                    <!--
+                                    <div class="logo_main2">
+                                        <img src="./assets/codoacodo.jpg" alt="">
+                                    </div>
+                                    -->
+                                    <div clase="text_main2">
+                                        <tr>
+                                            <td><h4 class="title">{{i + 1}}.- {{Educacion.nombreE}}</h4></td>
+                                            <td><p>{{Educacion.descripcionE}}</p></td>
+                                        </tr>
+                                    </div>
+                                </div>
+                                <div class="iconos">
+                                  <td>
+                                      <div class="iconos_top">
+                                          <div class="btn-edit4A" *ngIf="isLogged">
+                                              <i routerLink="/nuevaedu" class="fa fa-plus"></i>
+                                          </div>
+                                          <div class="btn-edit5A" *ngIf="isLogged">
+                                              <i routerLink="/editedu/{{Educacion.id}}" class="fa fa-pencil"></i>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td class="btn-edit6A" *ngIf="isLogged">
+                                      <div class="iconos_bottom">
+                                          <div class="btn-edit6A">
+                                              <i (click)="delete(Educacion.id)" class="fa fa-trash"></i>
+                                          </div>
+                                      </div>
+                                  </td>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </tbody>
+            </table>
+            <div class="cv">
+                <a id="cv" href="https://raw.githubusercontent.com/JoseLuisGalvis/ap_cvWeb_assets/main/pdf/CVITJLGE2023.pdf" target="_blank" download="CVJoseLuisGalvis">Descargue CV</a>
+            </div>
+        </div>
+    </div>
+</div>

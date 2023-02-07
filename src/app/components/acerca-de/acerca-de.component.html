@@ -1,0 +1,29 @@
+<div id="section_1">
+    <div class="section_1_top">
+        <h1 class="mi_animacion_1">{{persona.nombre}} {{persona.apellido}}</h1>
+        <h3 class="mi_animacion_1">{{persona.cargo}}</h3>
+        <h5>{{persona.ciudad}}</h5>
+        <img src="https://raw.githubusercontent.com/JoseLuisGalvis/ap_cvWeb_assets/main/fondo.jpg" alt="">
+    </div>
+    <div class="section_1_bottom">
+        <div class="s1_left">
+            <div class="titulo_s1left">
+                <h1> Quién Soy?</h1>
+            </div>
+            <div class="parrafo">
+                <p>
+                    {{persona.descripcion}}
+                </p>
+            </div>
+        </div>
+        <div class="s1_rigth">
+              <img src={{persona.img}} id="foto">
+              <div class="iconos">
+              <div class="iconos_top">
+                  <div class="btn-edit5A" *ngIf="isLogged">
+                      <i routerLink="/editacercade/{{persona.id}}" class="fa fa-pencil"></i>
+                  </div>
+              </div>
+        </div>
+    </div>
+</div>

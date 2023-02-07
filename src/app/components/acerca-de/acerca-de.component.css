@@ -1,0 +1,221 @@
+#section_1 {
+  width: 98%;
+  height: 99vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+
+.section_1_top {
+  width: 100%;
+  height: 63vh;
+  position: relative;
+  background: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4em;
+  top: 0;
+}
+
+.section_1_top img {
+  width: 100%;
+  height: 63vh;
+  border-radius: 0.4em;
+  box-shadow: 5px 10px 8px #eee;
+}
+
+.section_1_top h1 {
+    position: absolute;
+    font-size: 6em;
+    color: #ffff;
+    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff, 3px 4px 3px #ffff, 4px 5px 4px #000050;
+    transition: transform .6s; /* Animation */
+}
+
+.section_1_top h1:hover {
+    color: #97e9ff;
+    cursor: pointer;
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.mi_animacion_1{
+  animation: zoomIn; /*  animated infinite zoomIn backInDown */
+  animation-duration: 8s;
+  animation-delay: 1s;
+}
+
+.section_1_top h3 {
+  position: absolute;
+  font-size: 3em;
+  color: #ffff;
+  margin: 4em 0 0 0;
+  text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff, 3px 4px 3px #ffff, 4px 5px 4px #000050;
+}
+
+.section_1_top h3:hover {
+  color: #97e9ff;
+  cursor: pointer;
+}
+
+.section_1_top h5 {
+  position: absolute;
+  font-size: 1.5em;
+  color: #ffff;
+  margin: 13em 0 0 0;
+  text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff, 3px 4px 3px #ffff, 4px 5px 4px #000050;
+}
+
+.section_1_top h5:hover {
+  color: #97e9ff;
+  cursor: pointer;
+}
+
+.section_1_bottom {
+  width: 100%;
+  height: 34vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.s1_left {
+  width: 50%;
+  height: 34vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.titulo_s1left {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo_s1left h1 {
+  font-size: 3em;
+  padding: 1.5em 0 0 0;
+  color: #ffff;
+  text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff, 3px 4px 3px #ffff, 4px 5px 4px #000050;
+}
+
+.titulo_s1left h1:hover{
+  color: #97e9ff;
+  cursor: pointer;
+}
+
+.parrafo p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  color: #ffff;
+  font-size: 1.3em;
+  padding: 0 3em;
+}
+
+.parrafo p {
+  color: #ffff;
+  font-size: 1.3em;
+  padding: 2em 3em;
+}
+
+.s1_rigth {
+  width: 50%;
+  height: 48vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo_s1right {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo_s1right h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #ffff;
+  text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff, 3px 4px 3px #ffff, 4px 5px 4px #000050;
+}
+
+.titulo_s1right h1:hover{
+  color: #97e9ff;
+  cursor: pointer;
+}
+
+.s1_rigth img {
+  width: calc(14em - 2%);
+  height: calc(14em - 2%);
+  border-radius: 50%;
+  border: 5px solid #eee;
+  transition: transform .4s; /* Animation */
+}
+
+.s1_rigth img:hover {
+  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer
+}
+
+.iconos {
+    width: calc(4em - 2%);
+    height: calc(12em - 2%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.iconos_top {
+    width: calc(4em - 2%);
+    height: calc(12em - 2%);
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0.5em 0;
+}
+
+.btn-edit5A {
+    width: 4em;
+    height: 12em;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+.btn-edit5A .fa {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    font-size: 1em;
+    color: #ffff;
+    margin: 0 0.8em 0 0;
+    z-index: 5;
+}
+
+.btn-edit5A i {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    font-size: 1em;
+    color: #000;
+    margin: 0 0.8em 0 0;
+    cursor: pointer;
+    z-index: 6;
+}
