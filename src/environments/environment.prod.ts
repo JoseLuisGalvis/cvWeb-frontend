@@ -1,5 +1,6 @@
 export const environment = {
 
-    production: true
+    production: true,
+    URL: 'https://cvweb-backend-production.up.railway.app/'
 
 };
