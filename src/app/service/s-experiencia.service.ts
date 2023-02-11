@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 })
 
 export class SExperienciaService {
-    /*expURL = 'http://localhost:8080/explab/'*/
-    expURL = 'https://cvweb-backend-production.up.railway.app/explab/'
+    expURL = 'http://localhost:8080/explab/'
+    /*expURL = 'https://cvweb-backend-production.up.railway.app/explab/'*/
 
     constructor(private httpClient: HttpClient) { }
 
