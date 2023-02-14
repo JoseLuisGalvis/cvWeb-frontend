@@ -8,6 +8,7 @@ import { TokenService } from '../../../../../../fProjAPYoProg/frontend/src/app/s
   templateUrl: './habilidades.component.html',
   styleUrls: ['./habilidades.component.css']
 })
+
 export class HabilidadesComponent implements OnInit {
     skills: Skills[] = []
 
