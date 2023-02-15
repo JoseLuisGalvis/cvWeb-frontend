@@ -12,7 +12,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 
 export class AuthService {
     /*authURL = 'http://localhost:8080/auth/';*/
-    authURL = 'https://cvweb-backend-production.up.railway.app/auth/';
+    authURL = 'https://cvweb-backend-production-311a.up.railway.app/auth/';
 
     constructor(private httpClient: HttpClient) { }
 
