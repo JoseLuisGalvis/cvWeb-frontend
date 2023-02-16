@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 
 export class SExperienciaService {
     /*expURL = 'http://localhost:8080/explab/';*/
-    expURL = 'https://cvweb-backend-production-311a.up.railway.app/';
+    expURL = 'https://cvweb-backend-production-311a.up.railway.app';
 
     constructor(private httpClient: HttpClient) { }
 
