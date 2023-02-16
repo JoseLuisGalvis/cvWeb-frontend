@@ -10,7 +10,7 @@ import { Skills } from '../model/skills';
 export class SkillsService {
 
     /*URL = 'http://localhost:8080/skills/';*/
-    URL = 'https://cvweb-backend-production-311a.up.railway.app';
+    URL = 'https://cvweb-backend-production-311a.up.railway.app'
 
     constructor(private httpClient: HttpClient) { }
 
