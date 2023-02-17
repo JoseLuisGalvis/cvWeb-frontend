@@ -2,18 +2,18 @@
   "name": "cv-web",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "builder": "@angular-builders/custom-webpack:browser",
-    "options": {
-        "customWebpackConfig": {
-            "path": "src/custom-webpack.config.js",
-            "replaceDuplicatePlugins": true
-        }
-    }
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build",
+      "watch": "ng build --watch --configuration development",
+      "test": "ng test",
+      "builder": "@angular-builders/custom-webpack:browser",
+      "options": {
+          "customWebpackConfig": {
+              "path": "src/custom-webpack.config.js",
+              "replaceDuplicatePlugins": true
+          }
+      }
   },
 
   "private": true,

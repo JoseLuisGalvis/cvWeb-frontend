@@ -17,7 +17,9 @@
         <p><a class="social-button rt-social-button-5" href="https://www.instagram.com/" target="_blank" rel="noopener"><i class='fa fa-instagram'></i></a></p>
         <p><a class="social-button rt-social-button-5" href="https://twitter.com" target="_blank" rel="noopener"><i class='fa fa-twitter'></i></a></p>
         <p><a class="social-button rt-social-button-5" href="https://linkedin.com" target="_blank" rel="noopener"><i class='fa fa-linkedin'></i></a></p>
-        <button id="button" type="button" *ngIf="!isLogged"><a href="/login" target="_blank"><img src="https://www.freeiconspng.com/uploads/login-button-png-4.jpg"></a></button>
+        <button id="button" type="button" (click)="login()" target="_blank" *ngIf="!isLogged"><img src="https://www.freeiconspng.com/uploads/login-button-png-4.jpg"></button>
         <button id="button" type="button" (click)="onLogOut()" *ngIf="isLogged"><i class="fa fa-sign-out" aria-hidden="true"></i>LOGOUT</button>
     </div>
 </nav>
+
+<!-- <a href="/login" target="_blank"></a> -->

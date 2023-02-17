@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TokenService } from '../../service/token.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ import { TokenService } from '../../service/token.service';
 export class HeaderComponent implements OnInit {
     isLogged = false;
 
-    constructor(private tokenService: TokenService) { }
+    constructor(private router: Router, private tokenService: TokenService) { }
 
     ngOnInit(): void {
 
@@ -18,6 +19,10 @@ export class HeaderComponent implements OnInit {
         } else {
             this.isLogged = false;
         }
+    }
+
+    login() {
+        this.router.navigate(['/login']);
     }
 
     onLogOut():void {
