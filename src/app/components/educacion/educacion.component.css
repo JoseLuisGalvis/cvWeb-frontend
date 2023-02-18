@@ -322,3 +322,155 @@ tr {
   margin: 0 0.4em 0 0;
 }
 
+/*******************     Responsive     **********************/
+
+@media screen and (min-width: 1366px) and (max-width: 1440px) {
+
+  .containerSection2 h2 {
+      font-size: 3em;
+      color: #ffff;
+      padding: 2em 0 0 0;
+  }
+
+  .info {
+      padding: 0.5em 0.6em 0.5em 1em;
+  }
+
+  .title {
+      height: 1.5vh;
+      font-size: 1em;
+  }
+
+  .info p {
+      font-size: 0.9em;
+      margin: 0.25em 0;
+  }
+
+  .cv a {
+      padding: 0.5em 1em;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+
+  .containerSection2 h2 {
+    font-size: 2em;
+    color: #ffff;
+    padding: 1em 0 0 0;
+  }
+
+  .info {
+      padding: 0.5em 0.6em 0.5em 1em;
+  }
+
+  .title {
+      height: 1.5vh;
+      font-size: 1em;
+  }
+
+  .info p {
+      font-size: 0.9em;
+      margin: 0.25em 0;
+  }
+
+  .cv a {
+      padding: 0.5em 1em;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .containerSection2 h2 {
+    font-size: 2em;
+    color: #ffff;
+    padding: 3em 0 0 0;
+  }
+
+  .timeline {
+    width: 90%;
+    margin: 0 10px3px 10px;
+    padding: 10px 10px 0px 10px;
+  }
+
+  .outer {
+      width: 90%;
+      margin: 0 0.5em;
+  }
+
+  .info {
+      padding: 0.5em 0.6em 0.5em 1em;
+  }
+
+  .text_main2 {
+    width: 100%;
+  }
+
+  .title {
+      height: 1vh;
+      font-size: 0.7em;
+  }
+
+  .info p {
+      font-size: 0.5em;
+      margin: 0.45em 0;
+  }
+
+  .iconos {
+    margin: 0 0 0 0.5em;
+  }
+
+  .cv a {
+      padding: 0.5em 1em;
+  }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+
+  .containerSection2 h2 {
+    font-size: 2em;
+    color: #ffff;
+    padding: 3em 0 0 0;
+  }
+
+  .timeline {
+    width: 90%;
+    margin: 0 10px3px 10px;
+    padding: 10px 10px 0px 10px;
+  }
+
+  .outer {
+      width: 90%;
+      margin: 0 0.5em;
+  }
+
+  .info {
+      padding: 0.5em 0.6em 0.5em 1em;
+  }
+
+  .text_main2 {
+    width: 100%;
+  }
+
+  .title {
+      height: 1vh;
+      font-size: 0.65em;
+      margin: 0 0 0.5em 0;
+  }
+
+  .info p {
+      font-size: 0.5em;
+      margin: 1em 0 0 0;
+  }
+
+  .iconos {
+    margin: 0 0 0 0.5em;
+  }
+
+  .cv a {
+      padding: 0.5em 1em;
+  }
+
+}
