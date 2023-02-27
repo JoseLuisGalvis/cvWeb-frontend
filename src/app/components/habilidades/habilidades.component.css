@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     top: 200%;
     left: 15%;
     background-color: rgba(0,0,0,0.3);
@@ -24,11 +23,9 @@
 
 .titulo_container3 {
     width: 100%;
-    height: 98vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     z-index: 2;
 }
 
@@ -36,7 +33,7 @@
     font-size: 4em;
     color: #ffff;
     margin: 0;
-    padding: 1em 0 0 0;
+    padding: 1.5em 0 0 0;
     text-shadow: 1px 2px 1px #000050, 3px 4px 3px #ffff;
     transition: transform .4s; /* Animation */
     z-index: 1;
@@ -53,88 +50,64 @@
   color: #ffff;
   margin: 0.5em 0 1em 0;
   padding: 0;
-  text-shadow: 1px 2px 1px #000050, 3px 4px 3px #ffff;
+  text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff;
   z-index: 1;
 }
 
 .indice {
-    width: 90%;
-    height: 70%;
+    width: 70%;
+    height: 65%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 1em;
     border-radius: 0.6em;
 }
 
 #indices {
     width: 100%;
-    height: 93%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
-    padding: 1em;
     border-radius: 0.6em;
-    transition: transform .4s; /* Animation */
-}
-
-#indices:hover {
-    transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    cursor: pointer
 }
 
 .indices_top {
-    width: 16%;
+    width: 24%;
     height: 22%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background-color: rgba(255, 255, 255, 0.3);*/
     border-radius: 0.5em;
     border: 2px solid #ffff;
-    margin: 0 0.5em 1.5em 1em;
+    margin: 0 0 1.5em 0;
     padding: 0.25em 0.5em 0.5em 0.5em;
-    box-shadow: 3px 4px 3px #000050, 4px 5px 4px #ffff;
+    box-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff;
     transition: all .5s ease-in-out;
-    animation-duration: 2s;
-    animation-name: slidein;
-
   }
-
-  @keyframes slidein {
-    from {
-      margin-left: -100%;
-      width: -300%
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
 
 .tecnologia {
     width: 90%;
     height: 90%;
-    margin: 0.5em 0.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em 1em 0.5em 0;
 }
 
 .tecnologia h5 {
     width: 100%;
     text-align: center;
     font-family: Arial;
-    font-size: 1.15em;
+    font-size: 1.1em;
     color: #ffff;
     margin: 0.3em 0 0.5em 0;
-    text-shadow: 2px 3px 2px #000090, 5px 5px 8px #ffff;
+    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff;
     transition: transform .4s; /* Animation */
-    z-index: 1;
-}
+  }
 
 .tecnologia h5:hover {
     color: #ffff;
@@ -169,14 +142,11 @@
     font-family: sans-serif;
     border-radius:50%;
     cursor: pointer;
-    box-shadow: 2px 3px 2px #ffff, 0px 10px 10px #000050;
-    margin: 0 0 0.5em 1.2em;
-    transition: transform .3s; /* Animation */
-
+    box-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff;
+    margin: 0 0 0.5em 0.25em;
 }
 
 .pie:hover {
-    transform: scale(1.4); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     background-color: rgba(255, 255, 255);
     color: #000090;
 }
@@ -186,7 +156,6 @@
     content: "";
     position: absolute;
     border-radius: 50%;
-
 }
 
 .pie:before {
@@ -196,7 +165,6 @@
     conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
     -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
     mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-
 }
 
 .pie:after {
@@ -234,7 +202,6 @@
 
 /* Fin del Código de los Graficos Circulares Animados de Progreso */
 
-
 .nota {
     width: 98%;
     display: flex;
@@ -247,20 +214,18 @@
 .nota h6 {
     display: flex;
     text-align: right;
-    font-size: 1.5em;
-    margin: 0.5em 2em 2em 0;
+    font-size: 1.3em;
+    margin: 0 2em 3em 0;
 }
 
 /********************************************************************/
 
 .iconos {
-  width: 10%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: 0.2em 0.3em 0.2em 0.2em;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.2em 0.3em 0.2em 0.2em;
 }
 
 .iconos_top {
@@ -274,8 +239,6 @@
 .btn-edit4A {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    float: right;
     margin: 0.1em;
 }
 
@@ -289,8 +252,8 @@
 
 .btn-edit5A {
     display: flex;
-    justify-content: flex-end;
-    float: right;
+
+
 }
 
 .btn-edit5A i {
@@ -300,8 +263,8 @@
 
 .btn-edit6A {
     display: flex;
-    justify-content: flex-end;
-    float: right;
+
+
 }
 
 .btn-edit6A i {
@@ -314,5 +277,73 @@
     display: flex;
     align-items: center;
     margin: 0;
+}
+
+/* ***************     Responsive     *********************** */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .titulo_container3 h1 {
+        font-size: 3em;
+        padding: 3em 0 0 0;
+    }
+/*
+    .indice {
+        width: 100%;
+        padding: 0;
+    }
+*/
+    .pie {
+        font-size: 1.1em;
+    }
+
+    .tecnologia h5 {
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+
+    .titulo_container3 h1 {
+        font-size: 2em;
+        padding: 4em 0 0 0;
+    }
+
+    .indice {
+        width: 100%;
+        padding: 0;
+    }
+
+    .indices_top {
+        width: 27%;
+        margin: 0 1em 2.5em 0;
+        padding: .25em 0 .5em 0;
+    }
+
+    .pie {
+        font-size: 0.6em;
+    }
+
+    .tecnologia {
+        margin: .5em .25em 0 .5em;
+    }
+
+    .tecnologia h5 {
+        font-size: 0.5em;
+    }
+
+    .iconos_top {
+        margin: 0.5em 1em 0.7em 0;
+    }
+
+    .btn-edit5A i {
+        font-size: 0.6em;
+    }
+
+    .btn-edit6A i {
+        font-size: 0.6em;
+    }
+
 }
 

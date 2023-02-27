@@ -12,7 +12,7 @@
   font-size: 6em;
   color: #ffff;
   padding: 1em;
-  text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff, 3px 4px 3px #ffff, 4px 5px 4px #000050;
+  text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff;
 }
 
 .container4 {
@@ -22,17 +22,11 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 300%;
+  top: 306%;
   left: 15%;
   background-color: rgba(0,0,0,0.3);
   margin: 2.5em;
   z-index: 1;
-}
-
-.video4 video {
-  width: 99vw;
-  height: 97vh;
-  z-index: -1;
 }
 
 /* ********** main 4 ********** */
@@ -44,14 +38,14 @@
   display: inline-block;
   font-family: Helvetica;
   border-radius: 1em;
-  margin: 4em 0.5em 1em 1em;
+  margin: 1em 0.5em 1em 1em;
 }
 
 .main4 h2 {
     font-size: 2.5em;
     color: #ffff;
-    margin: 1em 0 0 1.5em;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff, 3px 4px 3px #ffff, 4px 5px 4px #000050;
+    margin: 0 0 0 1.5em;
+    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff;
 }
 
 .main4 h2:hover {
@@ -60,7 +54,15 @@
     text-transform: uppercase; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.main4 h4 {
+.subtitulo {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.subtitulo h4 {
   font-size: 1.5em;
   color: #ffff;
   margin: 1em 0 0 1.5em;
@@ -77,13 +79,12 @@
 
 .section1 {
   width: 100%;
-  height: 50vh;
   display: grid;
   grid-gap: 10px 15px;
-  grid-template-columns: repeat(4, 260px);
+  grid-template-columns: repeat(3, 260px);
   grid-template-rows: repeat(3, 190px);
   justify-content: center;
-  padding: 2.5em 2em 0 2em;
+  padding: 1.5em 2em 0 2em;
   transition: transform .2s; /* Animation */
 }
 
@@ -128,6 +129,7 @@
   background-color: #bbb;
   color: black;
   box-shadow: 5px 10px 10px #AEAEAE;
+  margin: 0 1em 0 0;
 }
 
 .flip-box-front img {
@@ -248,4 +250,76 @@ color: #ffff;
     background: #ffff;
     color: #000090;
     cursor: pointer;
+}
+
+
+/* ***************     Responsive     *********************** */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+    .main4 {
+      margin: 1em 0.5em 1em 0;
+    }
+
+    .main4 h2 {
+        font-size: 2em;
+        margin: .5em 0 0 1.5em;
+    }
+
+    .subtitulo h4 {
+        font-size: 1.1em;
+    }
+
+    .section1 {
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        grid-gap: 10px 15px;
+        grid-template-columns: repeat(3, 160px);
+        grid-template-rows: repeat(3, 175px);
+        padding: 0;
+    }
+
+    .flip-box {
+        margin: 2em 1.5em 0 0;
+    }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+
+    .container4 {
+        margin: 2.5em 0.75em
+    }
+
+    .main4 h2 {
+      font-size: 1em;
+      margin: 4em 0 0 1.5em;
+    }
+
+    .subtitulo h4{
+        font-size: 0.5em;
+        color: #fff;
+        margin: 0.5em 0 0 0.5em;
+    }
+
+    .section1 {
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        grid-gap: 10px 15px;
+        grid-template-columns: repeat(3, 90px);
+        grid-template-rows: repeat(3, 165px);
+        padding: 0;
+    }
+
+    .flip-box {
+        margin: 2em 1.5em 0 0;
+    }
+
+    .project_btn a {
+          font-size: 0.6em;
+    }
+
 }

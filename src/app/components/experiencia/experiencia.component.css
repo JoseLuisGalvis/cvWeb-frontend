@@ -2,8 +2,6 @@
     width: 98%;
     height: 99vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #000050;
     border-radius: 0.5em;
     border: 3px solid #ffff;
@@ -14,27 +12,21 @@
     width: 70%;
     height: 98vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 400%;
+    top: 406%;
     left: 15%;
     background-color: rgba(0,0,0,0.2);
     margin: 3em;
-    z-index: 1;
-
 }
 
 .codigos {
     width: 90%;
     height: 68vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-
 }
 
 .codigos_contact {
@@ -62,14 +54,7 @@
     color: #ffff;
     font-size: 2em;
     margin: 0 0 1em 0;
-    text-shadow: 2px 3px 2px #ffff;
 }
-
-.contacto p:hover {
-    color: #97e9ff;
-    cursor: pointer;
-}
-
 
 .qr {
     width: 50%;
@@ -89,17 +74,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-
 }
 
 .codigos_title h1 {
     font-size: 4em;
     color: #ffff;
     padding: 1em;
-    z-index: 3;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff;
-  }
+    text-shadow: 1px 1px 1px #000050, 2px 2px 2px #ffff;
+}
 
 .codigos_title h1:hover {
     color: #97e9ff;
@@ -117,7 +99,7 @@
 
 .link_2, .link_3 {
     width: 30%;
-    height: 38vh;
+    height: 16vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,25 +111,15 @@
     height: 15vh;
     border: 5px solid #000;
     border-radius: 0.4em;
-    box-shadow: 2px 3px 2px #ffff, 3px 4px 3px #ffff;
-    transition: transform .4s; /* Animation */
+    box-shadow: 1px 2px 1px #ffff;
 }
 
-.link_2 img:hover {
-    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    cursor: pointer
-}
 
 .link_2 p {
     color: #ffff;
     font-size: 2em;
     margin: 1em 0 0 0;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff, 3px 4px 3px #ffff, 4px 5px 4px #000050;
-}
-
-.link_2  p:hover {
-    color: #97e9ff;
-    cursor: pointer;
+    text-shadow: 1px 2px 1px #ffff;
 }
 
 .link_3 img {
@@ -155,25 +127,15 @@
     height: 15vh;
     border: 5px solid #000;
     border-radius: 0.4em;
-    box-shadow: 2px 3px 2px #ffff, 3px 4px 3px #ffff;
-    transition: transform .4s; /* Animation */
+    box-shadow: 1px 1px 1px #ffff;
 }
 
-.link_3 img:hover {
-    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    cursor: pointer
-}
 
 .link_3 p {
     color: #ffff;
     font-size: 2em;
     margin: 1em 0 0 0;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff, 3px 4px 3px #ffff, 4px 5px 4px #000050;
-}
-
-.link_3  p:hover {
-    color: #97e9ff;
-    cursor: pointer;
+    text-shadow: 1px 2px 1px #000050;
 }
 
 
@@ -185,13 +147,13 @@
     color: #ffff;
     border-radius: 0.4em;
     border: 1px solid #ffff;
-    box-shadow: 2px 3px 2px #000050, 3px 4px 3px #ffff, 4px 6px 4px #000050;
+    box-shadow: 1px 2px 1px #ffff;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
 .titulo_container:hover {
-    box-shadow: 0 0.2em 0.2em #000050, 0 0.9em 1.5em #97e9ff;
+    box-shadow: 1px 2px 1px #000050, 1px 2px 1px #97e9ff;
     transform: translateY(-0.5em);
 }
 
@@ -227,12 +189,12 @@ td {
 
 td h3 {
     margin: 0 0 0 0.5em;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #000050;
+    text-shadow: 1px 2px 1px #000050;
 }
 
 td p {
   margin: 0 0 0 0.5em;
-  text-shadow: 1px 2px 1px #000050, 2px 3px 2px #000050;
+  text-shadow: 1px 2px 1px #000050;
 }
 
 .resumen {
@@ -254,7 +216,7 @@ td p {
     width: 100%;
     align-items: flex-start;
     margin: 0 0 1em 0.5em;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #000050;
+    text-shadow: 1px 2px 1px #000050;
 }
 
 .iconos {
@@ -285,7 +247,7 @@ td p {
 .btn-edit4A i {
     color: #ffff;
     margin: 0 0.8em 0 0;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #000050;
+    text-shadow: 1px 2px 1px #000050;
 }
 
 .btn-edit5A {
@@ -298,7 +260,7 @@ td p {
 
 .btn-edit5A i {
     margin: 0 0.8em 0 0;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #000050;
+    text-shadow: 1px 2px 1px #000050;
 }
 
 .btn-edit6A {
@@ -311,7 +273,7 @@ td p {
 
 .btn-edit6A i {
     margin: 0 0.5em 0 0;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #000050;
+    text-shadow: 1px 2px 1px #000050;
 }
 
 .iconos_bottom {
@@ -325,3 +287,102 @@ td p {
 .iconos a {
     color: #ffff;
 }
+
+/* ***************     Responsive     *********************** */
+
+@media screen and (min-width: 1024px) and (max-width: 1420px) {
+
+    .contacto p {
+      font-size: 1.5em;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .codigos_title h1 {
+        font-size: 3em;;
+    }
+
+    .contacto p {
+      font-size: 1.1em;
+    }
+
+    .codigos_img {
+        margin: 0 2em 0 0;
+    }
+
+    .link_2 img {
+        width: 60%;
+        height: 10vh;
+    }
+
+    .link_2 p {
+        font-size: 1.5em;
+    }
+
+    .link_3 img {
+      width: 60%;
+      height: 10vh;
+    }
+
+    .link_3 p {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+
+    .container5 {
+        margin: 5em 2em 0 1em;
+    }
+
+    .codigos {
+        width: 100%;
+    }
+
+    .codigos_contact {
+      width: 100%;
+    }
+
+    .codigos_title h1 {
+        font-size: 2em;
+        margin: 3em 0 0 0;
+    }
+
+    .contacto p {
+        font-size: 0.7em;
+        margin: 0 1.5em 0 0;
+    }
+
+    .codigos_img {
+        margin: 0 0 0 2em;
+    }
+
+    .link_2, .link_3 {
+        width: 50%;
+        height: 10vh;
+    }
+
+    .link_2 img {
+        width: 100%;
+        height: 7vh;
+        margin: 0 2em 0 0;
+    }
+
+    .link_2 p {
+        font-size: 0.7em;
+    }
+
+    .link_3 img {
+        width: 100%;
+        height: 7vh;
+    }
+
+    .link_3 p {
+        font-size: 0.7em;
+    }
+
+}
+

@@ -151,17 +151,18 @@ button {
     cursor: pointer;
     margin: 1.2em 1em 1.2em 1.5em;
     padding: 0 1em;
+    z-index: 5;
     transition: transform .4s; /* Animation */
 }
 
 button img {
-  width: 7.5em;
-  height: 3em;
-  position: sticky;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
+    width: 7.5em;
+    height: 3em;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
 
 button i {

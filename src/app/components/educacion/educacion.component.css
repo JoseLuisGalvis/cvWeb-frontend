@@ -8,12 +8,6 @@
     margin: 1em;
 }
 
-.video2 video {
-  width: 99vw;
-  height: 97vh;
-  z-index: -1;
-}
-
 .containerSection2 {
     width: 70%;
     height: 97vh;
@@ -26,23 +20,19 @@
     left: 15%;
     background-color: rgba(0,0,0,0.6);
     margin: 1.5em 0 0 0;
-    z-index: 1;
 }
 
 .containerSection2 h2 {
     font-size: 3.5em;
     color: #ffff;
     padding: 1em 0 0 0;
-    z-index: 3;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff, 3px 4px 3px #ffff, 4px 5px 4px #000050;
+    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff;
     margin: 0;
-    transition: transform .4s; /* Animation */
 }
 
 .containerSection2 h2:hover {
     color: #97e9ff;
     cursor: pointer;
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 /* ***************************************************************************************** */
@@ -59,14 +49,11 @@
 
 .table {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 0 0 1em 0;
 }
 
 .table tbody {
     display: flex;
-    /*flex-direction: column;*/
     justify-content: center;
 }
 
@@ -78,15 +65,6 @@ tr {
 .outer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 3em 0 3em;
-}
-
-.outer1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 3em 0 3em;
 }
 
 /* Card container */
@@ -158,15 +136,15 @@ tr {
     color: #ffff;
     border-radius: 10px;
     padding: 0.8em 0.8em 0.8em 1em;
-    box-shadow: 2px 3px 2px #000050, 4px 6px 4px #ffff, 6px 8px 6px #ffff, 4px 6px 4px #000050;
+    box-shadow: 1px 2px 1px #000050, 2px 3px 2px #ffff;
     cursor: pointer;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #000050;
+    text-shadow: 1px 2px 1px #000050;
     transition: all 0.2s ease-in-out;
 }
 
 .info:hover {
     color: #000090;
-    box-shadow: 0 0.2em 0.2em #2196f3, 0 0.3em 1em #81c9fa, 0 0.9em 1.5em #b9ffff;
+    box-shadow: 0 0.2em 0.2em #2196f3;
     transform: translateY(-0.7em);
     text-shadow: none;
 }
@@ -174,12 +152,6 @@ tr {
 .encabezado {
     width: 94%;
     display: flex;
-    transition: transform .6s; /* Animation */
-}
-
-.encabezado:hover {
-    cursor: pointer;
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .logo_main2 {
@@ -202,17 +174,11 @@ tr {
 /* Title of the card */
 .title {
     width: 100%;
-    height: 2vh;
     font-size: 1.1em;
     color: #ffff;
     position: relative;
     margin: 0;
-    text-shadow: 1px 2px 1px #000050, 2px 3px 2px #000050;
-}
-
-.title:hover {
-  color: #000090;
-  text-shadow: none;
+    text-shadow: 1px 2px 1px #000050;
 }
 
 .info p {
@@ -236,42 +202,17 @@ tr {
 
 /* ***************************************************************************************** */
 
-.cv {
-  display: flex;
-  z-index: 4;
-}
-
-.cv a {
-  color: #ffff;
-  text-decoration: none;
-  border: 5px solid #ffff;
-  border-radius: 0.4em;
-  margin: 0;
-  padding: 1em 2em;
-  transition: transform .4s; /* Animation */
-}
-
-.cv a:hover {
-  border: 5px solid #97e9ff;
-  color: #97e9ff;;
-  box-shadow: 5px 8px 8px #ffff;
-  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
 .iconos {
   width: 6%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 0 0 1em;
+  margin: 0 0 0 0.5em;
 }
 
 .iconos_top {
-    width: 100%;
-    position: relative;
     display: flex;
-    align-items: center;
     margin: 0 0 1em 0;
 }
 
@@ -279,8 +220,6 @@ tr {
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    color: #000090;
-    float: right;
 }
 
 .btn-edit4A i {
@@ -292,8 +231,6 @@ tr {
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    color: #000090;
-    float: right;
 }
 
 .btn-edit5A i {
@@ -305,8 +242,7 @@ tr {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    color: #000090;
-    float: right;
+
 }
 
 .btn-edit6A i {
@@ -315,68 +251,31 @@ tr {
 }
 
 .iconos_bottom {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 0 0.4em 0 0;
+    margin: 0 0.4em 0 0;
 }
 
-/*******************     Responsive     **********************/
+/* ***************     Responsive     *********************** */
 
-@media screen and (min-width: 1366px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
 
-  .containerSection2 h2 {
-      font-size: 3em;
+    .containerSection2 h2 {
+      font-size: 2em;
       color: #ffff;
-      padding: 2em 0 0 0;
-  }
+      padding: 1em 0 0 0;
+    }
 
-  .info {
-      padding: 0.5em 0.6em 0.5em 1em;
-  }
+    .info {
+        padding: 0.5em 0.6em 0.5em 1em;
+    }
 
-  .title {
-      height: 1.5vh;
-      font-size: 1em;
-  }
+    .title {
+        font-size: 1em;
+    }
 
-  .info p {
-      font-size: 0.9em;
-      margin: 0.25em 0;
-  }
-
-  .cv a {
-      padding: 0.5em 1em;
-  }
-
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1365px) {
-
-  .containerSection2 h2 {
-    font-size: 2em;
-    color: #ffff;
-    padding: 1em 0 0 0;
-  }
-
-  .info {
-      padding: 0.5em 0.6em 0.5em 1em;
-  }
-
-  .title {
-      height: 1.5vh;
-      font-size: 1em;
-  }
-
-  .info p {
-      font-size: 0.9em;
-      margin: 0.25em 0;
-  }
-
-  .cv a {
-      padding: 0.5em 1em;
-  }
+    .info p {
+        font-size: 0.9em;
+        margin: 0.25em 0;
+    }
 
 }
 
@@ -418,16 +317,17 @@ tr {
   }
 
   .iconos {
-    margin: 0 0 0 0.5em;
-  }
-
-  .cv a {
-      padding: 0.5em 1em;
+    margin: 0 0 0 1em;
   }
 
 }
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
+
+
+  .containerSection2 {
+      margin: 2.5em 0 0 0;
+  }
 
   .containerSection2 h2 {
     font-size: 2em;
@@ -467,10 +367,6 @@ tr {
 
   .iconos {
     margin: 0 0 0 0.5em;
-  }
-
-  .cv a {
-      padding: 0.5em 1em;
   }
 
 }

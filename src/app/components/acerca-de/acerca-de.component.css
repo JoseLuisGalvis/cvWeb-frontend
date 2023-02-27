@@ -230,7 +230,7 @@
 
   .titulo_s1left h1 {
     font-size: 2.5em;
-    padding: 2.5em 0 0 0;
+    padding: 1.5em 0 0 0;
   }
 
 }
@@ -238,12 +238,30 @@
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
 
   .section_1_top h1 {
-      font-size: 4em;
+      font-size: 3em;
+  }
+
+  .section_1_top h3 {
+      margin: 3em 0 0;
+  }
+
+  .section_1_top h5 {
+    margin: 11em 0 0;
   }
 
   .titulo_s1left h1 {
-      font-size: 2.5em;
-      padding: 2.5em 0 0 0;
+      font-size: 2em;
+      padding: 2em 0 0 0;
+  }
+
+  .parrafo p {
+      font-size: 1em;
+      padding: 1em 0.5em;
+  }
+
+  .s1_rigth img {
+      width: calc(7em - 2%);
+      height: calc(7em - 2%);
   }
 
 }
@@ -303,8 +321,8 @@
   }
 
   .parrafo p {
-      font-size: 0.8em;
-      padding: 2em 2em 4em 2em;
+      font-size: 0.7em;
+      padding: 2em 2em 4em 1em;
   }
 
   .s1_rigth img {
